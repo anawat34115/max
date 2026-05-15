@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAX MEP — Design 2: Clean Corporate Blue</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700;800&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        kanit: ['Kanit', 'sans-serif'],
+        sarabun: ['Sarabun', 'sans-serif'],
+      },
+      colors: {
+        navy: '#0D2B4E',
+        'navy-light': '#163d6e',
+        'navy-dark': '#091d35',
+        orange: '#E87722',
+        'orange-light': '#f09040',
+        slate: '#f7f9fc',
+      },
+    }
+  }
+}
+</script>
+<style>
+  body { font-family: 'Sarabun', sans-serif; }
+  .hero-pattern { background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.025) 0, rgba(255,255,255,0.025) 1px, transparent 1px, transparent 28px); }
+  .fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+  .svc-card:hover { border-color: #0D2B4E; box-shadow: 0 4px 20px rgba(13,43,78,0.1); transform: translateY(-2px); }
+</style>
+</head>
+<body class="font-sarabun bg-white text-gray-800">
+
+<!-- NAV -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 bg-navy rounded-lg flex items-center justify-center font-kanit font-black text-base text-white">M</div>
+      <div>
+        <div class="font-kanit font-bold text-sm text-navy tracking-widest">MAX MEP</div>
+        <div class="text-xs text-gray-400 leading-none">Co., Ltd.</div>
+      </div>
+    </div>
+    <div class="hidden md:flex items-center gap-7">
+      <a href="#services" class="text-gray-500 hover:text-navy text-sm font-medium transition-colors">บริการ MEP</a>
+      <a href="#grp" class="text-gray-500 hover:text-navy text-sm font-medium transition-colors">ถังน้ำ GRP</a>
+      <a href="#projects" class="text-gray-500 hover:text-navy text-sm font-medium transition-colors">ผลงาน</a>
+      <a href="#about" class="text-gray-500 hover:text-navy text-sm font-medium transition-colors">เกี่ยวกับเรา</a>
+      <a href="#contact" class="text-gray-500 hover:text-navy text-sm font-medium transition-colors">ติดต่อ</a>
+    </div>
+    <a href="#contact" class="bg-navy hover:bg-navy-dark text-white text-xs font-bold px-5 py-2.5 rounded-lg transition-colors">ขอใบเสนอราคา</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="pt-16 min-h-screen flex flex-col">
+  <!-- Main hero split -->
+  <div class="flex flex-col md:flex-row flex-1">
+    <!-- Left: Navy bg -->
+    <div class="bg-navy relative overflow-hidden flex-1 flex flex-col justify-center px-8 md:px-16 py-20">
+      <div class="hero-pattern absolute inset-0"></div>
+      <div class="absolute top-0 right-0 w-64 h-64 bg-orange/10 rounded-full blur-3xl"></div>
+      <div class="relative z-10 max-w-lg">
+        <div class="inline-block bg-orange text-white text-xs font-black px-3 py-1.5 rounded tracking-widest mb-6 uppercase">MEP Engineering Solutions</div>
+        <h1 class="font-kanit font-black text-5xl leading-tight text-white mb-4">
+          งานระบบ<br><span class="text-orange">วิศวกรรม MEP</span><br>ครบวงจร
+        </h1>
+        <p class="text-white/55 text-base leading-relaxed mb-8 max-w-sm">
+          บริษัทรับเหมางานระบบ M&E ระดับภูมิภาค ด้วยทีมวิศวกรกว่า 50 ท่าน ประสบการณ์ 10+ ปี ในไทย พม่า และมัลดีฟส์
+        </p>
+        <div class="flex gap-3">
+          <a href="#services" class="bg-orange hover:bg-orange-light text-white font-bold px-6 py-3 rounded-lg text-sm transition-all hover:shadow-lg hover:shadow-orange/30">ดูบริการทั้งหมด</a>
+          <a href="#projects" class="border border-white/25 hover:border-white/60 text-white/65 hover:text-white font-medium px-6 py-3 rounded-lg text-sm transition-all">ผลงานของเรา</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Stats + quick info -->
+    <div class="bg-slate border-l border-gray-200 w-full md:w-72 flex flex-col justify-center px-8 py-12 gap-5">
+      <div class="bg-white rounded-xl border border-gray-200 p-5 text-center">
+        <div class="font-kanit font-black text-4xl text-orange">50+</div>
+        <div class="text-gray-500 text-xs mt-1 font-medium">วิศวกรผู้เชี่ยวชาญ</div>
+      </div>
+      <div class="bg-white rounded-xl border border-gray-200 p-5 text-center">
+        <div class="font-kanit font-black text-4xl text-orange">10+</div>
+        <div class="text-gray-500 text-xs mt-1 font-medium">ปีประสบการณ์</div>
+      </div>
+      <div class="bg-white rounded-xl border border-gray-200 p-5 text-center">
+        <div class="font-kanit font-black text-4xl text-orange">500K+</div>
+        <div class="text-gray-500 text-xs mt-1 font-medium">ลิตร ความจุสูงสุด</div>
+      </div>
+      <div class="bg-navy rounded-xl p-4 text-center">
+        <div class="text-white/60 text-xs mb-1">ติดต่อได้เลย</div>
+        <div class="font-kanit font-bold text-white text-base">083-912-8999</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Orange strip -->
+  <div class="bg-orange px-8 md:px-16 py-3 flex flex-wrap justify-between gap-y-1">
+    <span class="text-white text-xs font-bold tracking-wide">ความเชี่ยวชาญระดับภูมิภาค</span>
+    <span class="text-white/60 text-xs">·</span>
+    <span class="text-white text-xs font-bold tracking-wide">มาตรฐาน ISO · WRAS · NFPA</span>
+    <span class="text-white/60 text-xs">·</span>
+    <span class="text-white text-xs font-bold tracking-wide">วิศวกร PE ใบอนุญาต</span>
+    <span class="text-white/60 text-xs">·</span>
+    <span class="text-white text-xs font-bold tracking-wide">083-912-8999</span>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-baseline gap-4 mb-12 fade-up">
+      <span class="text-orange text-xs font-bold tracking-widest uppercase">บริการของเรา</span>
+      <h2 class="font-kanit font-bold text-4xl text-navy">ระบบวิศวกรรม MEP ครบวงจร</h2>
+    </div>
+    <p class="text-gray-500 text-base leading-relaxed max-w-2xl mb-12 fade-up">ความเชี่ยวชาญของเราครอบคลุมระบบอาคารที่จำเป็นทั้งหมด ติดตั้งอย่างปลอดภัย มีประสิทธิภาพ สอดคล้องกับมาตรฐานไทยและสากล</p>
+    <div class="grid md:grid-cols-3 gap-5">
+      <div class="svc-card border border-gray-200 rounded-xl p-6 bg-white transition-all duration-300 cursor-default">
+        <div class="w-10 h-10 bg-gray-50 rounded-lg flex items-center justify-center text-xl mb-4">🔥</div>
+        <h3 class="font-bold text-navy text-sm mb-1">ระบบดับเพลิง</h3>
+        <p class="text-gray-400 text-xs mb-4">Fire Protection System</p>
+        <ul class="space-y-1.5">
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>Sprinkler System</li>
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>Fire Hydrant System</li>
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>Fire Pump System</li>
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>Fire Alarm System</li>
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>ระบบดับเพลิงอัตโนมัติ</li>
+        </ul>
+      </div>
+      <div class="svc-card border border-gray-200 rounded-xl p-6 bg-white transition-all duration-300 cursor-default">
+        <div class="w-10 h-10 bg-gray-50 rounded-lg flex items-center justify-center text-xl mb-4">⚡</div>
+        <h3 class="font-bold text-navy text-sm mb-1">ระบบไฟฟ้า</h3>
+        <p class="text-gray-400 text-xs mb-4">Electrical System</p>
+        <ul class="space-y-1.5">
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>High / Low Voltage</li>
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>Power Distribution (MDB/DB)</li>
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>Lighting System LED</li>
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>Emergency / UPS</li>
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>Generator System</li>
+        </ul>
+      </div>
+      <div class="svc-card border border-gray-200 rounded-xl p-6 bg-white transition-all duration-300 cursor-default">
+        <div class="w-10 h-10 bg-gray-50 rounded-lg flex items-center justify-center text-xl mb-4">💧</div>
+        <h3 class="font-bold text-navy text-sm mb-1">ระบบประปาและสุขาภิบาล</h3>
+        <p class="text-gray-400 text-xs mb-4">Plumbing System</p>
+        <ul class="space-y-1.5">
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>Water Supply System</li>
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>Sanitary / Drainage</li>
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>Wastewater Treatment</li>
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>Hot Water / RO / Filtration</li>
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>Water Tank System</li>
+        </ul>
+      </div>
+      <div class="svc-card border border-gray-200 rounded-xl p-6 bg-white transition-all duration-300 cursor-default">
+        <div class="w-10 h-10 bg-gray-50 rounded-lg flex items-center justify-center text-xl mb-4">❄️</div>
+        <h3 class="font-bold text-navy text-sm mb-1">ระบบปรับอากาศ HVAC</h3>
+        <p class="text-gray-400 text-xs mb-4">Air & Ventilation</p>
+        <ul class="space-y-1.5">
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>Air Conditioning VRV/VRF</li>
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>Chilled Water System</li>
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>AHU / FCU Systems</li>
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>Smoke Exhaust</li>
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>BMS Control</li>
+        </ul>
+      </div>
+      <div class="svc-card border border-gray-200 rounded-xl p-6 bg-white transition-all duration-300 cursor-default">
+        <div class="w-10 h-10 bg-gray-50 rounded-lg flex items-center justify-center text-xl mb-4">📹</div>
+        <h3 class="font-bold text-navy text-sm mb-1">ระบบ ELV</h3>
+        <p class="text-gray-400 text-xs mb-4">Smart Building</p>
+        <ul class="space-y-1.5">
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>CCTV System</li>
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>Access Control</li>
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>PA / Network System</li>
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>Smart Building</li>
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>BMS Automation</li>
+        </ul>
+      </div>
+      <div class="svc-card border-2 border-navy rounded-xl p-6 bg-slate transition-all duration-300 cursor-default">
+        <div class="w-10 h-10 bg-navy/10 rounded-lg flex items-center justify-center text-xl mb-4">🗄️</div>
+        <h3 class="font-bold text-orange text-sm mb-1">ถังเก็บน้ำ GRP</h3>
+        <p class="text-gray-400 text-xs mb-4">Fiberglass Tank</p>
+        <ul class="space-y-1.5">
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>ความจุ 1,000–500,000+ ลิตร</li>
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>SMC Fiberglass</li>
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>ISO-9001 · WRAS · PSB</li>
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>อายุ 30+ ปี</li>
+          <li class="text-gray-500 text-sm flex gap-2"><span class="text-orange text-xs mt-0.5">▸</span>100% BPA Free</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GRP TANK -->
+<section id="grp" class="py-24 bg-slate">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-baseline gap-4 mb-10 fade-up">
+      <span class="text-orange text-xs font-bold tracking-widest uppercase">ผลิตภัณฑ์</span>
+      <h2 class="font-kanit font-bold text-4xl text-navy">ถังเก็บน้ำ GRP ไฟเบอร์กลาส</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-10 items-start fade-up">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-white rounded-xl border border-gray-200 p-5">
+          <div class="text-2xl mb-3">⚖️</div>
+          <div class="font-bold text-navy text-sm">น้ำหนักเบา แข็งแรงสูง</div>
+          <div class="text-gray-500 text-xs mt-2 leading-relaxed">เทียบเท่าเหล็ก แต่เบากว่า 4 เท่า ขนส่งและติดตั้งง่าย</div>
+        </div>
+        <div class="bg-white rounded-xl border border-gray-200 p-5">
+          <div class="text-2xl mb-3">🛡️</div>
+          <div class="font-bold text-navy text-sm">ทนการกัดกร่อน</div>
+          <div class="text-gray-500 text-xs mt-2 leading-relaxed">ไม่เป็นสนิม เหมาะสำหรับน้ำดื่มและงานอุตสาหกรรม</div>
+        </div>
+        <div class="bg-white rounded-xl border border-gray-200 p-5">
+          <div class="text-2xl mb-3">🧼</div>
+          <div class="font-bold text-navy text-sm">ถูกสุขอนามัย</div>
+          <div class="text-gray-500 text-xs mt-2 leading-relaxed">100% BPA Free ปลอดสารพิษ พื้นผิวเรียบ ลดตะไคร่น้ำ</div>
+        </div>
+        <div class="bg-white rounded-xl border border-gray-200 p-5">
+          <div class="text-2xl mb-3">⏳</div>
+          <div class="font-bold text-navy text-sm">อายุ 30+ ปี</div>
+          <div class="text-gray-500 text-xs mt-2 leading-relaxed">บำรุงรักษาต่ำมาก ประหยัดต้นทุนระยะยาว</div>
+        </div>
+      </div>
+      <div class="bg-navy rounded-2xl p-8">
+        <h3 class="font-kanit font-bold text-white text-xl mb-2">ข้อมูลทางเทคนิค</h3>
+        <p class="text-orange text-xs font-semibold mb-6">ความจุ 1,000 – 500,000+ ลิตร</p>
+        <div class="space-y-3 mb-6">
+          <div class="flex justify-between py-2.5 border-b border-white/10">
+            <span class="text-white/45 text-sm">วัสดุ</span>
+            <span class="text-orange-light font-semibold text-sm">SMC Fiberglass</span>
+          </div>
+          <div class="flex justify-between py-2.5 border-b border-white/10">
+            <span class="text-white/45 text-sm">การส่งผ่านแสง</span>
+            <span class="text-orange-light font-semibold text-sm">&lt; 0.1%</span>
+          </div>
+          <div class="flex justify-between py-2.5 border-b border-white/10">
+            <span class="text-white/45 text-sm">BPA Free</span>
+            <span class="text-orange-light font-semibold text-sm">100% ปลอดสารพิษ</span>
+          </div>
+          <div class="flex justify-between py-2.5 border-b border-white/10">
+            <span class="text-white/45 text-sm">อายุการใช้งาน</span>
+            <span class="text-orange-light font-semibold text-sm">30+ ปี</span>
+          </div>
+          <div class="flex justify-between py-2.5">
+            <span class="text-white/45 text-sm">มาตรฐาน</span>
+            <span class="text-orange-light font-semibold text-sm">ISO · WRAS · PSB · KS</span>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-orange/15 border border-orange/30 text-orange text-xs font-bold px-3 py-1 rounded-full">ISO-9001</span>
+          <span class="bg-orange/15 border border-orange/30 text-orange text-xs font-bold px-3 py-1 rounded-full">WRAS</span>
+          <span class="bg-orange/15 border border-orange/30 text-orange text-xs font-bold px-3 py-1 rounded-full">PSB</span>
+          <span class="bg-orange/15 border border-orange/30 text-orange text-xs font-bold px-3 py-1 rounded-full">KS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-14 fade-up">
+      <div class="text-orange text-xs font-bold tracking-widest uppercase mb-2">ทำไมต้องเลือกเรา</div>
+      <h2 class="font-kanit font-bold text-4xl text-navy">ทำไมต้องเลือก MAX MEP</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6 fade-up">
+      <div class="border border-gray-200 rounded-2xl p-8 text-center hover:border-navy hover:shadow-lg transition-all cursor-default">
+        <div class="w-14 h-14 bg-slate rounded-full flex items-center justify-center text-2xl mx-auto mb-4">👤</div>
+        <h3 class="font-bold text-navy text-base mb-3">ผู้รับผิดชอบเพียงรายเดียว</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">ระบบ M&E และถังเก็บน้ำ GRP อยู่ภายใต้ผู้รับเหมาเพียงรายเดียว ลดความซับซ้อน ประสานงานได้ทันที</p>
+      </div>
+      <div class="border border-gray-200 rounded-2xl p-8 text-center hover:border-navy hover:shadow-lg transition-all cursor-default">
+        <div class="w-14 h-14 bg-slate rounded-full flex items-center justify-center text-2xl mx-auto mb-4">🔧</div>
+        <h3 class="font-bold text-navy text-base mb-3">โซลูชันครบวงจร</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">รวมทุกระบบ MEP ไว้ในมือเดียว ออกแบบ จัดซื้อ ติดตั้ง ทดสอบ และส่งมอบ ครบทุกขั้นตอน</p>
+      </div>
+      <div class="border border-gray-200 rounded-2xl p-8 text-center hover:border-navy hover:shadow-lg transition-all cursor-default">
+        <div class="w-14 h-14 bg-slate rounded-full flex items-center justify-center text-2xl mx-auto mb-4">🏅</div>
+        <h3 class="font-bold text-navy text-base mb-3">มาตรฐานสากล</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">สอดคล้องกับกฎหมายไทยและมาตรฐาน NFPA · ISO · WRAS พร้อมทีมวิศวกรใบอนุญาต PE</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-navy py-16">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+    <div>
+      <h2 class="font-kanit font-bold text-2xl text-white">พร้อมเริ่มโครงการของคุณแล้วหรือยัง?</h2>
+      <p class="text-white/50 text-sm mt-1">ทีมวิศวกรพร้อมให้คำปรึกษาฟรี · 083-912-8999 · maxmep.th@gmail.com</p>
+    </div>
+    <a href="#contact" class="bg-orange hover:bg-orange-light text-white font-bold px-8 py-3 rounded-lg text-sm transition-colors whitespace-nowrap">ขอใบเสนอราคา →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-slate border-t border-gray-200 py-8">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+    <div class="flex items-center gap-3">
+      <div class="w-7 h-7 bg-navy rounded flex items-center justify-center font-kanit font-black text-xs text-white">M</div>
+      <span class="font-kanit font-bold text-sm text-navy">MAX MEP Co., Ltd.</span>
+    </div>
+    <p class="text-gray-400 text-xs">© 2026 MAX MEP Co., Ltd. · 2/88 อาคารบางนาคอมเพล็กซ์ ชั้น 17 บางนา กรุงเทพฯ 10260</p>
+    <div class="flex gap-6">
+      <a href="#" class="text-gray-400 text-xs hover:text-navy transition-colors">บริการ</a>
+      <a href="#" class="text-gray-400 text-xs hover:text-navy transition-colors">ผลงาน</a>
+      <a href="#" class="text-gray-400 text-xs hover:text-navy transition-colors">ติดต่อ</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) t.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+</script>
+</body>
+</html>

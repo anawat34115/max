@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAX MEP - โซลูชันระบบวิศวกรรมแบบมืออาชีพ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 'max-blue': '#0f2b5a', 'max-orange': '#f37021' }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>body { font-family: 'Prompt', sans-serif; background-color: #f8fafc; }</style>
+</head>
+<body class="text-slate-800 antialiased">
+
+    <!-- แถบนำทาง (Navbar) -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-2">
+                    <div class="w-10 h-10 bg-max-blue rounded flex items-center justify-center font-bold text-white text-xl border-2 border-max-orange">M</div>
+                    <span class="font-bold text-xl text-max-blue tracking-wide">MAX <span class="text-max-orange">MEP</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#" class="text-max-blue font-bold border-b-2 border-max-orange py-1">หน้าหลัก</a>
+                    <a href="#" class="text-gray-500 hover:text-max-blue font-medium">เกี่ยวกับเรา</a>
+                    <a href="#" class="text-gray-500 hover:text-max-blue font-medium">บริการและผลิตภัณฑ์</a>
+                    <a href="#" class="text-gray-500 hover:text-max-blue font-medium">ผลงานโครงการ</a>
+                    <a href="#" class="text-gray-500 hover:text-max-blue font-medium">ติดต่อเรา</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ส่วนฮีโร่ (Hero) -->
+    <section class="relative h-[85vh] flex items-center justify-center pt-20">
+        <div class="absolute inset-0 w-full h-full">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2662&auto=format&fit=crop" class="w-full h-full object-cover" alt="" />
+            <div class="absolute inset-0 bg-slate-900/60"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                The Precision & Trust <br>
+                <span class="text-max-orange">ในระบบวิศวกรรมอาคาร</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 font-light">
+                โซลูชันระบบไฟฟ้า เครื่องกล และถังเก็บน้ำ GRP แบบครบวงจรเพื่อความปลอดภัย
+            </p>
+            <a href="#" class="bg-max-orange hover:bg-orange-600 text-white px-8 py-3 rounded-full font-medium text-lg transition-all shadow-lg">
+                เริ่มต้นโครงการ
+            </a>
+        </div>
+    </section>
+
+    <!-- แถบรับรองมาตรฐาน -->
+    <section class="py-8 bg-white border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-70">
+            <span class="text-xl font-bold text-slate-500">ISO 9001</span>
+            <span class="text-xl font-bold text-slate-500">WRAS Certified</span>
+            <span class="text-xl font-bold text-slate-500">PSB Certified</span>
+            <span class="text-xl font-bold text-slate-500">NFPA Standards</span>
+        </div>
+    </section>
+
+    <!-- เกี่ยวกับเรา (แนะนำบริษัทแบบย่อ) -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 relative">
+                <div class="absolute inset-0 bg-max-orange rounded-2xl transform translate-x-4 translate-y-4 opacity-20"></div>
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356f12?w=800&auto=format&fit=crop" class="relative z-10 w-full h-[400px] object-cover rounded-2xl shadow-lg" alt="">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-sm font-bold text-max-orange mb-2 uppercase tracking-wider">About Us</h2>
+                <h3 class="text-3xl font-bold text-max-blue mb-6">ผู้เชี่ยวชาญด้านงานระบบวิศวกรรม M&E และถังเก็บน้ำ GRP</h3>
+                <p class="text-gray-600 mb-4 leading-relaxed">
+                    บริษัท แม็ก เอ็มอีพี จำกัด (MAX MEP) ให้บริการออกแบบ ติดตั้ง และดูแลระบบงานวิศวกรรมสำหรับอาคาร โรงงาน และโครงการต่างๆ ทั่วประเทศไทย ด้วยความเชี่ยวชาญระดับภูมิภาคที่ผ่านประสบการณ์โครงการระดับนานาชาติ
+                </p>
+                <p class="text-gray-600 mb-8 leading-relaxed">
+                    เราไม่ได้เป็นเพียงผู้รับเหมา แต่เราคือพันธมิตรระยะยาวของคุณในการสร้างความมั่นใจว่าระบบอาคารจะปลอดภัย มีประสิทธิภาพ และใช้งานได้ยาวนาน
+                </p>
+                <div class="flex gap-6">
+                    <div class="flex flex-col">
+                        <span class="text-3xl font-extrabold text-max-blue">50+</span>
+                        <span class="text-sm text-gray-500">ทีมวิศวกรผู้เชี่ยวชาญ</span>
+                    </div>
+                    <div class="flex flex-col border-l border-gray-200 pl-6">
+                        <span class="text-3xl font-extrabold text-max-blue">10+</span>
+                        <span class="text-sm text-gray-500">ปีของประสบการณ์เฉลี่ย</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- บริการหลัก 4 ระบบ (M&E) -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-bold text-max-orange mb-2 uppercase tracking-wider">Our M&E Services</h2>
+                <h3 class="text-3xl font-bold text-max-blue mb-4">บริการติดตั้งระบบเครื่องกลและไฟฟ้า</h3>
+                <p class="text-gray-500 max-w-2xl mx-auto">โซลูชันแบบบูรณาการที่เชื่อมโยงกันอย่างสมบูรณ์แบบ เพื่อความปลอดภัยและประสิทธิภาพของอาคาร</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- ระบบ 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition-all border border-gray-100 group">
+                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-max-blue mb-6 group-hover:bg-max-blue group-hover:text-white transition-colors">
+                        <i data-lucide="zap" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-800 mb-3">ระบบไฟฟ้า</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed">ระบบไฟฟ้าแรงสูง/แรงต่ำ, ตู้ MDB, แสงสว่าง LED, ไฟฉุกเฉิน และเครื่องกำเนิดไฟฟ้า (Generator)</p>
+                </div>
+                <!-- ระบบ 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition-all border border-gray-100 group">
+                    <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center text-red-600 mb-6 group-hover:bg-red-600 group-hover:text-white transition-colors">
+                        <i data-lucide="flame" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-800 mb-3">ระบบดับเพลิง</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed">ระบบสปริงเกอร์, ท่อดับเพลิง (Fire Hydrant), ปั๊มน้ำดับเพลิง และระบบแจ้งเหตุเพลิงไหม้ (Fire Alarm)</p>
+                </div>
+                <!-- ระบบ 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition-all border border-gray-100 group">
+                    <div class="w-12 h-12 bg-cyan-50 rounded-xl flex items-center justify-center text-cyan-600 mb-6 group-hover:bg-cyan-600 group-hover:text-white transition-colors">
+                        <i data-lucide="wind" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-800 mb-3">ระบบปรับอากาศ</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed">ระบบแอร์ (HVAC), ท่อลม, น้ำเย็น (Chilled Water), ควบคุมอุณหภูมิและความชื้น และระบบระบายอากาศ</p>
+                </div>
+                <!-- ระบบ 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition-all border border-gray-100 group">
+                    <div class="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center text-teal-600 mb-6 group-hover:bg-teal-600 group-hover:text-white transition-colors">
+                        <i data-lucide="droplets" class="w-6 h-6"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-800 mb-3">ระบบสุขาภิบาล</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed">ระบบประปาและน้ำทิ้ง, บำบัดน้ำเสีย, ปั๊มน้ำ, ถังเก็บน้ำอุตสาหกรรม และระบบกรอง RO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ถังเก็บน้ำ GRP -->
+    <section class="py-20 bg-max-blue text-white overflow-hidden relative">
+        <div class="absolute -right-20 -top-20 w-96 h-96 bg-max-orange/10 rounded-full blur-3xl"></div>
+        <div class="max-w-6xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-12 relative z-10">
+            <div class="lg:w-1/2">
+                <h2 class="text-sm font-bold text-max-orange mb-2 uppercase tracking-wider">Premium Product</h2>
+                <h3 class="text-3xl md:text-4xl font-bold mb-6">ถังเก็บน้ำ GRP ไฟเบอร์กลาส</h3>
+                <p class="text-blue-100 mb-8 leading-relaxed">
+                    ผลิตจากวัสดุ SMC (Sheet Molding Compound) ออกแบบด้วยระบบโมดูลาร์ที่ปรับแต่งได้ตามความต้องการ รองรับความจุตั้งแต่ 1,000 ถึง 500,000+ ลิตร เหมาะสำหรับน้ำดื่ม น้ำใช้ และระบบดับเพลิง
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="flex items-start gap-3">
+                        <div class="mt-1 text-max-orange"><i data-lucide="check-circle" class="w-5 h-5"></i></div>
+                        <div>
+                            <h4 class="font-bold">น้ำหนักเบา & แข็งแรง</h4>
+                            <p class="text-sm text-blue-200">แข็งแรงเทียบเท่าเหล็ก แต่น้ำหนักเบากว่าถึง 4 เท่า</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="mt-1 text-max-orange"><i data-lucide="check-circle" class="w-5 h-5"></i></div>
+                        <div>
+                            <h4 class="font-bold">ทนทานต่อการกัดกร่อน</h4>
+                            <p class="text-sm text-blue-200">ไม่เป็นสนิม ใช้งานได้ยาวนานกว่า 30 ปี</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="mt-1 text-max-orange"><i data-lucide="check-circle" class="w-5 h-5"></i></div>
+                        <div>
+                            <h4 class="font-bold">ถูกสุขอนามัย 100%</h4>
+                            <p class="text-sm text-blue-200">ป้องกันการเติบโตของแบคทีเรีย ปลอดภัยสำหรับน้ำดื่ม</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="mt-1 text-max-orange"><i data-lucide="check-circle" class="w-5 h-5"></i></div>
+                        <div>
+                            <h4 class="font-bold">ประกอบและติดตั้งง่าย</h4>
+                            <p class="text-sm text-blue-200">แผงยึดมาตรฐาน นำเข้าพื้นที่แคบได้สะดวก</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/2">
+                <img src="https://images.unsplash.com/photo-1585434190899-77f060bc0075?w=800&auto=format&fit=crop" class="w-full rounded-2xl shadow-2xl border-4 border-white/10" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- กลุ่มลูกค้าและผลงาน -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-bold text-max-orange mb-2 uppercase tracking-wider">Industries We Serve</h2>
+                <h3 class="text-3xl font-bold text-max-blue mb-4">รองรับหลากหลายอุตสาหกรรม</h3>
+                <p class="text-gray-500">ผลงานติดตั้งระบบและถังเก็บน้ำที่ครอบคลุมโครงการทุกขนาด</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="relative group overflow-hidden rounded-xl h-48 cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=600&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="">
+                    <div class="absolute inset-0 bg-max-blue/60 group-hover:bg-max-blue/40 transition-colors"></div>
+                    <div class="absolute inset-0 flex items-center justify-center text-center p-4">
+                        <h4 class="text-white font-bold">โรงงาน<br>อุตสาหกรรม</h4>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-xl h-48 cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1542314831-c6a4d2757155?w=600&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="">
+                    <div class="absolute inset-0 bg-max-blue/60 group-hover:bg-max-blue/40 transition-colors"></div>
+                    <div class="absolute inset-0 flex items-center justify-center text-center p-4">
+                        <h4 class="text-white font-bold">โรงแรม &<br>รีสอร์ทหรู</h4>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-xl h-48 cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="">
+                    <div class="absolute inset-0 bg-max-blue/60 group-hover:bg-max-blue/40 transition-colors"></div>
+                    <div class="absolute inset-0 flex items-center justify-center text-center p-4">
+                        <h4 class="text-white font-bold">โครงสร้างพื้นฐาน<br>(สนามบิน)</h4>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-xl h-48 cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="">
+                    <div class="absolute inset-0 bg-max-blue/60 group-hover:bg-max-blue/40 transition-colors"></div>
+                    <div class="absolute inset-0 flex items-center justify-center text-center p-4">
+                        <h4 class="text-white font-bold">อาคารพาณิชย์ &<br>ห้างสรรพสินค้า</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ขั้นตอนการทำงาน (Project Management Process) -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-max-blue mb-4">ขั้นตอนการทำงานที่เป็นระบบ</h2>
+                <p class="text-gray-500">จากแนวคิดสู่ความสำเร็จที่จัดการได้จริง</p>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between relative">
+                <!-- เส้นเชื่อมพื้นหลัง -->
+                <div class="hidden md:block absolute top-12 left-[10%] right-[10%] h-0.5 bg-gray-200"></div>
+                
+                <div class="flex-1 text-center relative mb-8 md:mb-0">
+                    <div class="w-24 h-24 mx-auto bg-white border-4 border-gray-100 text-max-blue rounded-full flex items-center justify-center mb-4 relative z-10 shadow-sm">
+                        <i data-lucide="search" class="w-10 h-10"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-800 mb-2">1. สำรวจและวางแผน</h4>
+                    <p class="text-sm text-gray-500 px-4">ประเมินความต้องการและสำรวจพื้นที่หน้างาน</p>
+                </div>
+                
+                <div class="flex-1 text-center relative mb-8 md:mb-0">
+                    <div class="w-24 h-24 mx-auto bg-white border-4 border-gray-100 text-max-blue rounded-full flex items-center justify-center mb-4 relative z-10 shadow-sm">
+                        <i data-lucide="pen-tool" class="w-10 h-10"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-800 mb-2">2. ออกแบบวิศวกรรม</h4>
+                    <p class="text-sm text-gray-500 px-4">จัดทำแบบแปลน ข้อกำหนดเทคนิค ตามมาตรฐาน</p>
+                </div>
+
+                <div class="flex-1 text-center relative mb-8 md:mb-0">
+                    <div class="w-24 h-24 mx-auto bg-white border-4 border-max-orange text-max-orange rounded-full flex items-center justify-center mb-4 relative z-10 shadow-md">
+                        <i data-lucide="settings" class="w-10 h-10"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-800 mb-2">3. ดำเนินการติดตั้ง</h4>
+                    <p class="text-sm text-gray-500 px-4">ควบคุมการทำงานและทดสอบระบบอย่างเข้มงวด</p>
+                </div>
+
+                <div class="flex-1 text-center relative">
+                    <div class="w-24 h-24 mx-auto bg-white border-4 border-gray-100 text-max-blue rounded-full flex items-center justify-center mb-4 relative z-10 shadow-sm">
+                        <i data-lucide="shield-check" class="w-10 h-10"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-800 mb-2">4. ส่งมอบและดูแล</h4>
+                    <p class="text-sm text-gray-500 px-4">บริการหลังการขาย บำรุงรักษาเชิงป้องกัน</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- มาตรฐานและคุณภาพ (สลับซ้ายขวา) -->
+    <section class="py-20 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-max-blue mb-2">มาตรฐานและคุณภาพของเรา</h2>
+                <p class="text-gray-500">เหตุผลที่ควรเลือก MAX MEP เป็นพันธมิตรของคุณ</p>
+            </div>
+
+            <div class="space-y-12">
+                <div class="flex flex-col md:flex-row items-center gap-8 bg-white p-6 rounded-3xl border border-slate-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1541888086425-d81bb19240f5?w=600&auto=format&fit=crop" class="w-full md:w-5/12 h-64 object-cover rounded-2xl" alt="">
+                    <div class="md:w-7/12 px-4">
+                        <h3 class="text-2xl font-bold text-max-blue mb-3">ความเชี่ยวชาญระดับภูมิภาค</h3>
+                        <p class="text-gray-600 leading-relaxed">ประสบการณ์อันยาวนานในเอเชีย ตั้งแต่โครงการในต่างประเทศเช่น สนามบินมัลดีฟส์ ไปจนถึงประเทศไทย เรามุ่งเน้นการเติบโตโดยสั่งสมความเชี่ยวชาญในการติดตั้งระบบเครื่องกลและไฟฟ้าที่แม่นยำ</p>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col md:flex-row-reverse items-center gap-8 bg-white p-6 rounded-3xl border border-slate-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356f12?w=600&auto=format&fit=crop" class="w-full md:w-5/12 h-64 object-cover rounded-2xl" alt="">
+                    <div class="md:w-7/12 px-4">
+                        <h3 class="text-2xl font-bold text-max-blue mb-3">การควบคุมคุณภาพที่เข้มงวด</h3>
+                        <p class="text-gray-600 leading-relaxed">ความปลอดภัยเป็นสิ่งที่ไม่สามารถประนีประนอมได้ งานทั้งหมดเป็นไปตามมาตรฐานข้อกำหนดของประเทศไทย, NFPA และหลักปฏิบัติที่ดีที่สุด อุปกรณ์ทุกชิ้นผ่านการทดสอบก่อนส่งมอบ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer แบบย่อ -->
+    <footer class="bg-max-blue text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-4">MAX MEP Co., Ltd.</h2>
+            <p class="text-blue-200 mb-6">2/88 อาคารบางนาคอมเพล็กซ์ ออฟฟิศ ทาวเวอร์ ชั้น 17 กทม. 10260</p>
+            <p class="text-sm text-blue-300">&copy; 2026 MAX MEP. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
