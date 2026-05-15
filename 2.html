@@ -40,11 +40,13 @@ tailwind.config = {
 <nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm">
   <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
     <div class="flex items-center gap-3">
-      <div class="w-9 h-9 bg-navy rounded-lg flex items-center justify-center font-kanit font-black text-base text-white">M</div>
-      <div>
-        <div class="font-kanit font-bold text-sm text-navy tracking-widest">MAX MEP</div>
-        <div class="text-xs text-gray-400 leading-none">Co., Ltd.</div>
-      </div>
+<div class="flex items-center gap-2">
+    <!-- ส่วนของรูปภาพโลโก้ -->
+    <img src="logo.jpg" alt="MAX MEP Logo" class="h-10 w-auto object-contain">
+    
+    <!-- หากในรูปมีแต่สัญลักษณ์ M และต้องการเก็บชื่อ Text ไว้ ให้ใช้โค้ดด้านล่างนี้ร่วมด้วย -->
+    <!-- <span class="font-bold text-xl text-max-blue tracking-wide">MAX <span class="text-max-orange">MEP</span></span> -->
+</div>
     </div>
     <div class="hidden md:flex items-center gap-7">
       <a href="#services" class="text-gray-500 hover:text-navy text-sm font-medium transition-colors">บริการ MEP</a>
