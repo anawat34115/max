@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บริการและผลิตภัณฑ์ - MAX MEP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 'max-blue': '#0f2b5a', 'max-orange': '#f37021' }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+            background-color: #f8fafc;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="text-slate-800 antialiased">
+
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-2">
+                    <img src="logo.jpg" alt="MAX MEP Logo" class="h-10 w-auto object-contain">
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#" class="text-gray-500 hover:text-max-blue font-medium">หน้าหลัก</a>
+                    <a href="#" class="text-gray-500 hover:text-max-blue font-medium">เกี่ยวกับเรา</a>
+                    <a href="#" class="text-max-blue font-bold border-b-2 border-max-orange py-1">บริการและผลิตภัณฑ์</a>
+                    <a href="#" class="text-gray-500 hover:text-max-blue font-medium">ผลงานโครงการ</a>
+                    <a href="#" class="text-gray-500 hover:text-max-blue font-medium">ติดต่อเรา</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative h-[40vh] flex items-center justify-center pt-20">
+        <div class="absolute inset-0 w-full h-full">
+            <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=1920&auto=format&fit=crop"
+                class="w-full h-full object-cover" alt="Services Hero" />
+            <div class="absolute inset-0 bg-max-blue/85"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">บริการและผลิตภัณฑ์</h1>
+            <p class="text-lg text-blue-100 font-light">
+                โซลูชันวิศวกรรมระบบอาคารครบวงจร และนวัตกรรมระบบกักเก็บน้ำมาตรฐานสากล
+            </p>
+        </div>
+    </section>
+
+    <div class="bg-white border-b border-gray-200 sticky top-20 z-40 hidden sm:block">
+        <div class="max-w-6xl mx-auto px-4 flex justify-center space-x-12 h-14 items-center font-medium text-sm">
+            <a href="#mep-systems" class="text-gray-600 hover:text-max-orange flex items-center gap-2"><i
+                    data-lucide="component" class="w-4 h-4"></i> ระบบวิศวกรรม MEP</a>
+            <a href="#grp-tanks" class="text-gray-600 hover:text-max-orange flex items-center gap-2"><i
+                    data-lucide="box" class="w-4 h-4"></i> ถังเก็บน้ำ GRP ไฟเบอร์กลาส</a>
+            <a href="#grp-specs" class="text-gray-600 hover:text-max-orange flex items-center gap-2"><i
+                    data-lucide="file-text" class="w-4 h-4"></i> ข้อมูลทางเทคนิค</a>
+        </div>
+    </div>
+
+    <section id="mep-systems" class="py-20 bg-white scroll-mt-32">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-bold text-max-orange mb-2 uppercase tracking-wider">MEP Installation Services
+                </h2>
+                <h3 class="text-3xl font-bold text-max-blue mb-4">ระบบเครื่องกล ไฟฟ้า และสุขาภิบาล แบบบูรณาการ</h3>
+                <p class="text-gray-500 max-w-2xl mx-auto text-sm">เราให้บริการครอบคลุมตั้งแต่การออกแบบ จัดซื้อ ติดตั้ง
+                    จนถึงการดูแลรักษาเชิงป้องกัน โดยทีมวิศวกรผู้เชี่ยวชาญเฉพาะด้าน</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 flex gap-6">
+                    <div
+                        class="w-12 h-12 bg-red-50 text-red-500 rounded-2xl flex items-center justify-center shrink-0 shadow-sm">
+                        <i data-lucide="flame" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-slate-800 mb-3">ระบบดับเพลิง (Fire Protection System)</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            ออกแบบและติดตั้งระบบความปลอดภัยจากอัคคีภัยเพื่อความน่าเชื่อถือสูงสุดและการตอบสนองที่รวดเร็ว
+                            สอดคล้องกับมาตรฐานกฎหมายไทยและ NFPA</p>
+                        <div class="grid grid-cols-2 gap-2 text-xs text-gray-500 font-medium">
+                            <span class="flex items-center gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-red-400"></div>ระบบสปริงเกอร์เปียก/แห้ง
+                            </span>
+                            <span class="flex items-center gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-red-400"></div>ระบบท่อดับเพลิง (Hydrant)
+                            </span>
+                            <span class="flex items-center gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-red-400"></div>ระบบปั๊มน้ำดับเพลิง (Fire Pump)
+                            </span>
+                            <span class="flex items-center gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-red-400"></div>ระบบแจ้งเหตุเพลิงไหม้ (Alarm)
+                            </span>
+                            <span class="flex items-center gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-red-400"></div>ระบบควัน & ระบายอากาศฉุกเฉิน
+                            </span>
+                            <span class="flex items-center gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-red-400"></div>ระบบดับเพลิงอัตโนมัติ CO2
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 flex gap-6">
+                    <div
+                        class="w-12 h-12 bg-blue-50 text-max-blue rounded-2xl flex items-center justify-center shrink-0 shadow-sm">
+                        <i data-lucide="zap" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-slate-800 mb-3">ระบบไฟฟ้า & ELV (Electrical & Extra Low
+                            Voltage)</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">ระบบจ่ายกำลังไฟฟ้าและระบบสื่อสารอัจฉริยะ
+                            มุ่งเน้นประสิทธิภาพพลังงานและความเสถียรของระบบอาคาร</p>
+                        <div class="grid grid-cols-2 gap-2 text-xs text-gray-500 font-medium">
+                            <span class="flex items-center gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-blue-400"></div>ระบบไฟฟ้าแรงสูง / แรงต่ำ
+                            </span>
+                            <span class="flex items-center gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-blue-400"></div>ระบบตู้ MDB / DB
+                            </span>
+                            <span class="flex items-center gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-blue-400"></div>ไฟ LED อัจฉริยะ & Daylight
+                                Harvesting
+                            </span>
+                            <span class="flex items-center gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-blue-400"></div>ระบบสำรองไฟ UPS & Generator
+                            </span>
+                            <span class="flex items-center gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-blue-400"></div>ระบบเฝ้าระวัง CCTV IP & Access
+                                Control
+                            </span>
+                            <span class="flex items-center gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-blue-400"></div>ระบบควบคุมอาคารอัตโนมัติ BMS
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 flex gap-6">
+                    <div
+                        class="w-12 h-12 bg-teal-50 text-teal-600 rounded-2xl flex items-center justify-center shrink-0 shadow-sm">
+                        <i data-lucide="droplet" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-slate-800 mb-3">ระบบประปาและสุขาภิบาล (Plumbing System)</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            การบริหารจัดการระบบน้ำภายในอาคารและโรงงานที่ถูกสุขอนามัย ครบครันทั้งระบบน้ำดี น้ำเสีย
+                            และการบำบัดอย่างมีประสิทธิภาพ</p>
+                        <div class="grid grid-cols-2 gap-2 text-xs text-gray-500 font-medium">
+                            <span class="flex items-center gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-teal-400"></div>ระบบจ่ายน้ำประปา &
+                                ท่อน้ำดี-น้ำเสีย
+                            </span>
+                            <span class="flex items-center gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-teal-400"></div>ระบบสุขาภิบาล & ระบายน้ำ
+                                (Sanitary)
+                            </span>
+                            <span class="flex items-center gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-teal-400"></div>ระบบบำบัดน้ำเสีย (Wastewater)
+                            </span>
+                            <span class="flex items-center gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-teal-400"></div>ระบบปั๊มน้ำ &
+                                ถังเก็บน้ำประจำอาคาร
+                            </span>
+                            <span class="flex items-center gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-teal-400"></div>ระบบน้ำร้อน (Hot Water System)
+                            </span>
+                            <span class="flex items-center gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-teal-400"></div>ระบบกรองน้ำอุตสาหกรรม / ระบบ RO
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 flex gap-6">
+                    <div
+                        class="w-12 h-12 bg-cyan-50 text-cyan-600 rounded-2xl flex items-center justify-center shrink-0 shadow-sm">
+                        <i data-lucide="wind" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-slate-800 mb-3">ระบบปรับอากาศ & ระบายอากาศ (HVAC System)</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            ควบคุมอุณหภูมิและความชื้นเพื่อสภาพแวดล้อมที่เหมาะสมในโรงงานและอาคารสำนักงาน
+                            เน้นการประหยัดพลังงานขั้นสูง</p>
+                        <div class="grid grid-cols-2 gap-2 text-xs text-gray-500 font-medium">
+                            <span class="flex items-center gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-cyan-400"></div>ระบบท่อลม & ระบายอากาศ
+                                (Ventilation)
+                            </span>
+                            <span class="flex items-center gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-cyan-400"></div>ระบบน้ำเย็น Chilled Water System
+                            </span>
+                            <span class="flex items-center gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-cyan-400"></div>ระบบหมุนเวียนอากาศ Fresh /
+                                Exhaust Air
+                            </span>
+                            <span class="flex items-center gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-cyan-400"></div>ระบบควบคุมปรับน้ำยาแปรผัน
+                                VRV/VRF
+                            </span>
+                            <span class="flex items-center gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-cyan-400"></div>ระบบกระจายลมเย็น AHU / FCU
+                            </span>
+                            <span class="flex items-center gap-1.5">
+                                <div class="w-1.5 h-1.5 rounded-full bg-cyan-400"></div>ระบบระบายควันไฟ (Smoke Exhaust)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="grp-tanks" class="py-20 bg-slate-50 border-t border-gray-100 scroll-mt-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-12 mb-16">
+                <div class="lg:w-1/2">
+                    <h2 class="text-sm font-bold text-max-orange mb-2 uppercase tracking-wider">GRP Fiberglass Water
+                        Tank</h2>
+                    <h3 class="text-3xl font-bold text-max-blue mb-6">โซลูชันถังเก็บน้ำสำเร็จรูปโครงสร้างโมดูลาร์</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        ถังเก็บน้ำไฟเบอร์กลาส (GRP) ของเรา ผลิตจากวัสดุ **SMC (Sheet Molding Compound)** คุณภาพสูง
+                        ผ่านกระบวนการขึ้นรูปด้วยแม่พิมพ์ภายใต้ความร้อนและแรงอัดสูง โครงสร้างแบบแยกชิ้น (Modular Design)
+                        สามารถกำหนดความจุและประกอบได้หลากหลายตามข้อจำกัดของพื้นที่ ตั้งแต่ขนาดเล็กในครัวเรือน 1,000 ลิตร
+                        จนถึงขนาดอุตสาหกรรมใหญ่กว่า 500,000+ ลิตร
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-semibold text-slate-700">
+                        <div class="p-4 bg-white rounded-xl border border-gray-200 flex items-center gap-3">
+                            <i data-lucide="shield" class="text-max-orange w-5 h-5 shrink-0"></i> ปราศจากสาร BPA 100%
+                            (Food Grade)
+                        </div>
+                        <div class="p-4 bg-white rounded-xl border border-gray-200 flex items-center gap-3">
+                            <i data-lucide="sun" class="text-max-orange w-5 h-5 shrink-0"></i> อัตราแสงผ่าน <0.1%
+                                ไร้ตะไคร่น้ำ </div>
+                                <div class="p-4 bg-white rounded-xl border border-gray-200 flex items-center gap-3">
+                                    <i data-lucide="gauge" class="text-max-orange w-5 h-5 shrink-0"></i>
+                                    ออกแบบโครงสร้างด้วยวิธี FEM
+                                </div>
+                                <div class="p-4 bg-white rounded-xl border border-gray-200 flex items-center gap-3">
+                                    <i data-lucide="calendar" class="text-max-orange w-5 h-5 shrink-0"></i>
+                                    อายุการใช้งานยาวนานกว่า 30 ปี
+                                </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1585434190899-77f060bc0075?w=800&auto=format&fit=crop"
+                            class="w-full h-[380px] object-cover rounded-3xl shadow-md border border-gray-200"
+                            alt="GRP Tank Structure">
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
+                    <h4 class="text-xl font-bold text-max-blue mb-8 text-center">บริการด้านระบบถังเก็บน้ำ GRP ครบวงจร
+                    </h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+                            <div class="text-max-orange font-bold text-lg mb-2">01. การขายและการจัดหา</div>
+                            <p class="text-xs text-gray-500 leading-relaxed">
+                                จัดส่งแผงและชิ้นส่วนถังน้ำคุณภาพสูงที่ได้มาตรฐานการรับรองสากลโดยตรงจากผู้ผลิต</p>
+                        </div>
+                        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+                            <div class="text-max-orange font-bold text-lg mb-2">02. การออกแบบเฉพาะบุคคล</div>
+                            <p class="text-xs text-gray-500 leading-relaxed">
+                                วิศวกรช่วยคำนวณขนาดและทิศทางโครงสร้างให้เหมาะสมและคุ้มค่ากับพื้นที่หน้างานจริง</p>
+                        </div>
+                        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+                            <div class="text-max-orange font-bold text-lg mb-2">03. การติดตั้งโดยทีมผู้เชี่ยวชาญ</div>
+                            <p class="text-xs text-gray-500 leading-relaxed">
+                                การรวมถังเก็บน้ำเข้ากับระบบประปา/ระบบดับเพลิงเดิมอย่างไร้รอยต่อโดยช่างเทคนิคเฉพาะทาง</p>
+                        </div>
+                        <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100">
+                            <div class="text-max-orange font-bold text-lg mb-2">04. การบำรุงรักษาระยะยาว</div>
+                            <p class="text-xs text-gray-500 leading-relaxed">บริการสนับสนุนเชิงป้องกัน
+                                ตรวจเช็กระบบกันซึม และแผนทำความสะอาดตามกำหนดเวลา</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="grp-specs" class="py-20 bg-white scroll-mt-20">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-sm font-bold text-max-orange mb-2 uppercase tracking-wider">Technical Specifications
+                </h2>
+                <h3 class="text-3xl font-bold text-max-blue mb-4">มาตรฐานการออกแบบและข้อกำหนดวัสดุ</h3>
+            </div>
+
+            <div class="mb-12 overflow-x-auto rounded-2xl border border-gray-200 shadow-sm">
+                <table class="w-full text-left border-collapse bg-white text-sm">
+                    <thead>
+                        <tr class="bg-max-blue text-white font-semibold">
+                            <th class="p-4">ชนิดวัสดุ SMC (Sheet Molding Compound)</th>
+                            <th class="p-4">ปริมาณใยแก้ว (%)</th>
+                            <th class="p-4">แรงต้านการดัดงอ (Flexural)</th>
+                            <th class="p-4">แรงต้านการดึง (Tensile)</th>
+                            <th class="p-4">ความแข็งแรงของแรงกระแทก</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200 text-gray-600">
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-4 font-medium text-slate-800">SMC ชนิดทั่วไป</td>
+                            <td class="p-4">25%</td>
+                            <td class="p-4">60 เมกะพาสคัล (MPa)</td>
+                            <td class="p-4">80 เมกะพาสคัล (MPa)</td>
+                            <td class="p-4">30 kJ/m²</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-4 font-medium text-slate-800">SMC ชนิดความแข็งแรงสูง</td>
+                            <td class="p-4">33%</td>
+                            <td class="p-4">91 เมกะพาสคัล (MPa)</td>
+                            <td class="p-4">172 เมกะพาสคัล (MPa)</td>
+                            <td class="p-4">43 kJ/m²</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 bg-orange-50/30">
+                            <td class="p-4 font-medium text-max-blue font-bold">SMC ชนิดคุณภาพสูงพิเศษ (Premium)</td>
+                            <td class="p-4 font-semibold">38%</td>
+                            <td class="p-4 font-semibold text-max-orange">115 เมกะพาสคัล (MPa)</td>
+                            <td class="p-4 font-semibold text-max-orange">192 เมกะพาสคัล (MPa)</td>
+                            <td class="p-4 font-semibold">65 kJ/m²</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100">
+                    <h4 class="font-bold text-max-blue mb-4 flex items-center gap-2">
+                        <i data-lucide="wrench" class="w-5 h-5 text-max-orange"></i> ข้อกำหนดฐานรากและการติดตั้ง
+                    </h4>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex justify-between border-b border-gray-200 pb-2"><span>ความกว้างฐานคอนกรีต:</span>
+                            <span class="font-semibold text-slate-800">ขั้นต่ำ 300 - 400 มม.</span></li>
+                        <li class="flex justify-between border-b border-gray-200 pb-2"><span>ความสูงรวมฐานเหล็ก
+                                (HDG):</span> <span class="font-semibold text-slate-800">ขั้นต่ำ 600 มม.</span></li>
+                        <li class="flex justify-between border-b border-gray-200 pb-2"><span>ระยะห่างฐาน
+                                (กึ่งกลางถึงกึ่งกลาง):</span> <span class="font-semibold text-slate-800">ขั้นต่ำ 1,000
+                                มม.</span></li>
+                        <li class="flex justify-between border-b border-gray-200 pb-2">
+                            <span>ความเรียบและระดับระนาบ:</span> <span
+                                class="font-semibold text-slate-800">ความคลาดเคลื่อนน้อยกว่า 1/500</span></li>
+                        <li class="flex justify-between"><span>กำลังรับแรงอัดของคอนกรีต:</span> <span
+                                class="font-semibold text-slate-800">ขั้นต่ำ 180 กิโลกรัม/ตร.ซม.</span></li>
+                    </ul>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100">
+                    <h4 class="font-bold text-max-blue mb-4 flex items-center gap-2">
+                        <i data-lucide="maximize" class="w-5 h-5 text-max-orange"></i>
+                        ข้อกำหนดพื้นที่โดยรอบสำหรับการบำรุงรักษา
+                    </h4>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex justify-between border-b border-gray-200 pb-2"><span>ระยะห่างด้านข้างถัง:</span>
+                            <span class="font-semibold text-slate-800">ขั้นต่ำ 600 มม.</span></li>
+                        <li class="flex justify-between border-b border-gray-200 pb-2">
+                            <span>ระยะห่างด้านบนถึงเพดาน:</span> <span class="font-semibold text-slate-800">ขั้นต่ำ
+                                1,000 มม.</span></li>
+                        <li class="flex justify-between border-b border-gray-200 pb-2">
+                            <span>ความแข็งแรงการสั่นสะเทือนแนวราบ:</span> <span class="font-semibold text-slate-800">kh
+                                = 2/3G</span></li>
+                        <li class="flex justify-between border-b border-gray-200 pb-2"><span>แรงต้านทานลม
+                                (ถังเปล่าสูงสุด):</span> <span class="font-semibold text-slate-800">&lt; 60 m/s</span>
+                        </li>
+                        <li class="flex justify-between"><span>อัตราการเสียรูปสูงสุดเมื่อถังเต็ม:</span> <span
+                                class="font-semibold text-slate-800">&lt; 1% ของความสูงถัง</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-8 p-6 rounded-2xl border border-gray-200 text-center">
+                <h4 class="font-bold text-slate-800 mb-2">ขนาดแผงมาตรฐาน (Panel Size Options)</h4>
+                <p class="text-xs text-gray-500 max-w-xl mx-auto leading-relaxed">
+                    1000x1000 มม. | 1000x1500 มม. | 1000x2000 มม. | 500x500 มม. | 500x1000 มม. และแผ่นฐาน (Lower ชนิด A
+                    & B) พร้อมโครงเสริมแรงภายนอกชุบสังกะสีแบบจุ่มร้อน (HDG) และโครงภายในเคลือบ PE ป้องกันสนิมกึ่งถาวร
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-max-blue text-white text-center relative overflow-hidden">
+        <div
+            class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-max-orange/20 via-transparent to-transparent">
+        </div>
+        <div class="relative z-10 max-w-3xl mx-auto px-4">
+            <h3 class="text-2xl md:text-3xl font-bold mb-4">เริ่มต้นออกแบบระบบวิศวกรรมที่เหมาะสมสำหรับโครงการของคุณ</h3>
+            <p class="text-blue-100 text-sm mb-8 font-light max-w-xl mx-auto">วิศวกรของเราพร้อมให้คำปรึกษา
+                ออกแบบพิมพ์เขียว แปลนระบบวิศวกรรมอาคาร และสเปกถังเก็บน้ำ GRP ฟรี</p>
+            <a href="#"
+                class="bg-max-orange hover:bg-orange-600 text-white px-8 py-3 rounded-full font-medium text-sm transition-all shadow-md inline-block">
+                ติดต่อฝ่ายวิศวกรรมโครงการ
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-max-blue text-white py-12 border-t border-white/10">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-4">MAX MEP Co., Ltd.</h2>
+            <p class="text-blue-200 mb-6">2/88 อาคารบางนาคอมเพล็กซ์ ออฟฟิศ ทาวเวอร์ ชั้น 17 กทม. 10260</p>
+            <p class="text-sm text-blue-300">&copy; 2026 MAX MEP. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
